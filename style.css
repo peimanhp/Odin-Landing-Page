@@ -1,15 +1,79 @@
 :root {
-  --main-bg-color: #1f2937;
+  --hf-bg-color: #1f2937;
   --btn-color: #3882f6;
-  --text-color: #f9faf8;
+  --btn-hover: #186bf4;
+  --hf-text-color: #f9faf8;
+  --secondary-text-color: #e5e7eb;
 }
 
-body {
-    box-sizing: border-box;
+@font-face {
+  font-family: roboto;
+  src: url(./resources/roboto-regular-webfont.woff2);
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url(./resources/roboto-bold-webfont.woff2);
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: roboto;
+  text-decoration: none;
 }
 
 header div {
-    background-color: var(--main-bg-color);
-    color: var(--text-color);
-    height: 100%;
+  background-color: var(--hf-bg-color);
+  color: var(--hf-text-color);
+  padding-bottom: 7.5em;
+}
+
+header div div {
+  width: 525px;
+  height: 235px;
+  margin: 2em;
+  padding-bottom: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--hf-text-color);
+  font-family: roboto-bold;
+  font-size: 3em;
+  margin: 0;
+  line-height: 1em;
+}
+
+p {
+  color: var(--secondary-text-color);
+}
+
+button {
+  background-color: var(--btn-color);
+  color: var(--hf-text-color);
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-family: roboto-bold;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: var(--btn-hover);
+  color: var(--hf-text-color);
+  cursor: pointer;
+}
+
+#place-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-text-color);
+  background-color: #6d747d;
 }
