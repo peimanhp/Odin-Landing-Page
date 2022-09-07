@@ -1,0 +1,15 @@
+:root {
+  --main-bg-color: #1f2937;
+  --btn-color: #3882f6;
+  --text-color: #f9faf8;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+header div {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    height: 100%;
+}
