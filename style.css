@@ -1,7 +1,7 @@
 :root {
   --hf-bg-color: #1f2937;
   --btn-color: #3882f6;
-  --btn-hover: #186bf4;
+  --btn-hover: #0053da;
   --hf-text-color: #f9faf8;
   --secondary-text-color: #e5e7eb;
 }
@@ -18,26 +18,47 @@
 * {
   box-sizing: border-box;
   font-size: 18px;
-  font-family: roboto;
+  font-family: roboto, arial;
   text-decoration: none;
 }
 
-header div {
+.header-container {
+  display: flex;
+  justify-content: center;
   background-color: var(--hf-bg-color);
   color: var(--hf-text-color);
-  padding-bottom: 7.5em;
+  padding-bottom: 7em;
+  align-items: center;
 }
 
-header div div {
+.logo {
+  display: flex;
+  justify-content: left;
+  width: 525px;
+  margin: 1em 2em 0 0;
+  font-family: roboto-bold;
+  font-size: 1.3em;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: right;
+  width: 525px;
+  margin: 1em 0 0 2em;
+}
+
+.title-image {
   width: 525px;
   height: 235px;
   margin: 2em;
-  padding-bottom: 0;
 }
 
-.flex-container {
+.place-holder {
   display: flex;
   justify-content: center;
+  align-items: center;
+  color: var(--secondary-text-color);
+  background-color: #6d747d;
 }
 
 h1 {
@@ -52,6 +73,11 @@ p {
   color: var(--secondary-text-color);
 }
 
+a {
+  color: var(--secondary-text-color);
+  padding: 0 1em 0 1em;
+}
+
 button {
   background-color: var(--btn-color);
   color: var(--hf-text-color);
@@ -61,7 +87,7 @@ button {
   padding-left: 2em;
   padding-right: 2em;
   font-family: roboto-bold;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
 }
 
 button:hover {
@@ -70,10 +96,6 @@ button:hover {
   cursor: pointer;
 }
 
-#place-holder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--secondary-text-color);
-  background-color: #6d747d;
+a:hover {
+  color: white;
 }
