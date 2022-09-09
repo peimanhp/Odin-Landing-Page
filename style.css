@@ -4,6 +4,7 @@
   --btn-hover: #0053da;
   --hf-text-color: #f9faf8;
   --secondary-text-color: #e5e7eb;
+  --quote-bg: #e5e7eb;
 }
 
 @font-face {
@@ -13,6 +14,11 @@
 @font-face {
   font-family: roboto-bold;
   src: url(./resources/roboto-bold-webfont.woff2);
+}
+
+@font-face {
+  font-family: roboto-italic;
+  src: url(./resources/roboto-lightitalic-webfont.woff2);
 }
 
 * {
@@ -89,6 +95,7 @@
 .products {
   display: flex;
   justify-content: center;
+  margin-bottom: 6em;
 }
 
 img {
@@ -101,10 +108,39 @@ img {
   cursor: pointer;
 }
 
+.figure {
+  margin: 0 1.5rem 1.5rem;
+}
+
 figcaption {
   width: 9em;
   color: #585858;
   text-align: center;
+}
+
+.quote-section {
+  background-color: var(--quote-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 4rem;
+}
+
+.quote p {
+  font-family: roboto-italic;
+  font-size: 2em;
+  width: 44rem;
+  margin-bottom: 0;
+}
+
+#narrator {
+  align-self: flex-end;
+  font-family: roboto-bold;
+  font-size: 1.2rem;
+  color: #1f2937;
+  margin: 0;
+  text-align: right;
+  padding-right: 2em;
 }
 
 h1 {
