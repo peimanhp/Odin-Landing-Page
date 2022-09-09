@@ -27,8 +27,24 @@
   justify-content: center;
   background-color: var(--hf-bg-color);
   color: var(--hf-text-color);
-  padding-bottom: 7em;
+  padding: 6em 0 7em 0;
   align-items: center;
+  left: 0;
+  right: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: var(--hf-bg-color);
+  color: var(--hf-text-color);
+  padding-bottom: 1em;
+  align-items: center;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
