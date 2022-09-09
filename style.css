@@ -28,6 +28,10 @@
   text-decoration: none;
 }
 
+body {
+  margin: 0;
+}
+
 .header-container {
   display: flex;
   justify-content: center;
@@ -143,6 +147,46 @@ figcaption {
   padding-right: 2em;
 }
 
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 19.5rem;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--btn-color);
+  width: 57rem;
+  height: 8.3rem;
+  border-radius: 0.5rem;
+}
+
+footer div div div h3 {
+  font-family: roboto;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+footer div div div p {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.copyrights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.5rem;
+  background-color: var(--hf-bg-color);
+  color: var(--secondary-text-color);
+}
+
 h1 {
   color: var(--hf-text-color);
   font-family: roboto-bold;
@@ -163,6 +207,7 @@ a {
 button {
   background-color: var(--btn-color);
   color: var(--hf-text-color);
+  height: fit-content;
   border: none;
   border-radius: 0.5em;
   padding: 0.5em;
@@ -170,6 +215,12 @@ button {
   padding-right: 2em;
   font-family: roboto-bold;
   transition-duration: 0.2s;
+}
+
+footer div div button {
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
 }
 
 button:hover {
